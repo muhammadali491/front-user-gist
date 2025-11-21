@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+  .quarter,
+  .rest {
+    width: 100% !important;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
