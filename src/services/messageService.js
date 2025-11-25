@@ -2,7 +2,8 @@
 import axios from "axios";
 
 // const API_URL = "http://localhost:5000/api/gallery";
-const API_URL = "https://backend-gist-production.up.railway.app/api/message";
+console.log(import.meta.env.VITE_API_URL);
+const API_URL = `${import.meta.env.API_URL}/api/message`;
 
 export const addNewMessage = async (formData) => {
   console.log("Ready to send formdata to backend ", formData);

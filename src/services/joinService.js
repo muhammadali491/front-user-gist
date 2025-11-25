@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const API_URL = "http://localhost:5000/api/join";
-const API_URL = "https://backend-gist-production.up.railway.app/api/join";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/join`;
 
 export const addNewJoin = async (formData) => {
   console.log("Ready to send formdata to backend ", formData);
